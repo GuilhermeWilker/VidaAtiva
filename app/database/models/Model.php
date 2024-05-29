@@ -9,18 +9,18 @@ use PDO;
 
 abstract class Model
 {
-    protected PDO $conenction;
+    protected PDO $connection;
     protected string $table;
 
     public function __construct()
     {
-        $this->conenction = DB::connect();
+        $this->connection = DB::connect();
     }
 
     public function all(): array
     {
         $sql = "select * from {$this->table}";
-        $listData = $this->conenction->prepare($sql);
+        $listData = $this->connection->prepare($sql);
 
         $listData->execute();
 
@@ -30,7 +30,7 @@ abstract class Model
     public function findById(int $id): ?object
     {
         $sql = "select * from {$this->table} where id = :id";
-        $stmt = $this->conenction->prepare($sql);
+        $stmt = $this->connection->prepare($sql);
 
         $stmt->bindParam(':id', $id);
         $stmt->execute();
@@ -47,7 +47,7 @@ abstract class Model
 
         $sql = "insert into {$this->table} ($columns) values ($placeholders)";
 
-        $stmt = $this->conenction->prepare($sql);
+        $stmt = $this->connection->prepare($sql);
 
         foreach ($data as $key => $value) {
             $stmt->bindValue(':', $key, $value);
