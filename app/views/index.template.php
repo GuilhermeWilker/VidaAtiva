@@ -1,31 +1,76 @@
 <?php require __DIR__ . '/partials/head.php'; ?>
 
-<header class="w-full px-8 py-5 flex items-center justify-between bg-[#45593F] text-white">
-    <h2 class="text-xl font-bold">Vida Ativa</h2>
-</header>
+<main class="">
+    <header>
+        <div>
+            <h3 class="font-medium text-2xl">Olá, Guilherme Wilker</h3>
+            <p class="text-sm text-zinc-400">Como você está se sentindo hoje?</p>
+        </div>
+    </header>
 
-<main class="p-4">
-    <section class="flex flex-wrap gap-2 w-full justify-between">
-        <div class="w-[8.7rem] h-52 border border-red-600 rounded-md">
-            <img src="/assets/img/medicamento.png" alt="">
-            <p>Medicamentos</p>
+    <!-- Lembrete de Medicamentos -->
+    <?php require __DIR__ . '/partials/_reminderMed.php'; ?>
+
+    <h2 class="text-xl font-medium">O que deseja fazer?</h2>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-3 my-4">
+        <!-- Item que ocupa 4 linhas na primeira coluna -->
+        <div class="col-span-1 row-span-2 bg-violet-300 rounded-2xl p-4 w-full text-black hover:bg-violet-400 ease-out duration-300 h-fit mt-3">
+            <span class="block p-1 px-4 w-fit rounded-full text-sm bg-zinc-900 text-white">
+                Medicamentos
+            </span>
+
+            <h3 class="text-2xl font-black my-1 mt-3">
+                Adicione seus medicamentos
+            </h3>
+
+            <p class="text-sm font-medium text-zinc-600">
+                Crie agendamentos de seus medicamentos e nós sempre iremos notifica-lo(a).
+            </p>
+
+            <img src="/assets/img/pilulas.png" class="w-20 block ml-auto my-2" />
         </div>
 
-        <div class="w-[8.7rem] h-52 border border-red-600 rounded-md">
-            <img src="/assets/img/equipe-medica.png" alt="">
-            <p>Tele-atendimento</p>
+        <!-- Primeiro item que ocupa 2 linhas na segunda coluna -->
+        <div class="col-span-1 row-span-1 bg-blue-200 rounded-2xl p-4 w-full text-black hover:bg-blue-300 ease-out duration-300">
+
+            <h3 class="text-2xl font-black my-1 mt-3">
+                Atendimento Online
+            </h3>
+
+            <div class="flex justify-between">
+                <p class="text-sm font-medium text-zinc-600">
+                    Sua consulta em minutos!
+                </p>
+
+                <img src="/assets/img/equipe-medica.png" class="w-14" />
+            </div>
+
         </div>
 
-        <div class="w-[8.7rem] h-52 border border-red-600 rounded-md">
-            <img src="/assets/img/atividade-fisica.png" alt="">
-            <p>Atividade Física</p>
-        </div>
+        <!-- Segundo item que ocupa 2 linhas na segunda coluna -->
+        <div class="col-span-1 row-span-1 bg-yellow-200 rounded-2xl p-4 w-full text-black hover:bg-yellow-300 ease-out duration-300 h-fit">
 
-        <div class="w-[8.7rem] h-52 border border-red-600 rounded-md">
-            <img src="/assets/img/parque.png" alt="">
-            <p>Social</p>
+            <h3 class="text-2xl font-black my-1 mt-3">
+                Atividade Física
+            </h3>
+
+            <div class="flex justify-between">
+                <p class="text-sm font-medium text-zinc-600">
+                    Que tal alguns exercícios rápidos?
+                </p>
+
+                <img src="/assets/img/atividade-fisica.png" class="w-14" />
+            </div>
+
         </div>
-    </section>
+    </div>
+
+    <div class="my-1 bg-white rounded-2xl p-4 w-full text-black">
+        <h3 class="text-2xl font-black my-1 mt-3">
+            🚨🚨🚨🚨 EMERGENCIA! 🚨🚨🚨🚨
+        </h3>
+    </div>
 </main>
 
 <?php require __DIR__ . '/partials/foot.php'; ?>
