@@ -12,11 +12,10 @@ class MedicamentoController
     ) {
     }
 
-    public function index($medicamento): void
+    public function index(): void
     {
-        $this->view->render('index', [
-            'title' => 'Medicamentos',
-            'medicamento' => $medicamento
+        $this->view->render('medicamentos', [
+            'title' => 'Medicamentos'
         ]);
     }
 }

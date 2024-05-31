@@ -15,7 +15,7 @@
 
     <div class="grid grid-cols-2 grid-rows-2 gap-3 my-4">
         <!-- Item que ocupa 4 linhas na primeira coluna -->
-        <div class="col-span-1 row-span-2 bg-violet-300 rounded-2xl p-4 w-full text-black hover:bg-violet-400 ease-out duration-300 h-fit mt-3">
+        <a href="/medicamentos" class="col-span-1 row-span-2 bg-violet-300 rounded-2xl p-4 w-full text-black hover:bg-violet-400 ease-out duration-300 h-fit mt-3">
             <span class="block p-1 px-4 w-fit rounded-full text-sm bg-zinc-900 text-white">
                 Medicamentos
             </span>
@@ -25,11 +25,11 @@
             </h3>
 
             <p class="text-sm font-medium text-zinc-600">
-                Crie agendamentos de seus medicamentos e nós sempre iremos notifica-lo(a).
+                Crie lembretes para seus medicamentos e nós sempre iremos notificá-lo(a).
             </p>
 
             <img src="/assets/img/pilulas.png" class="w-20 block ml-auto my-2" />
-        </div>
+        </a>
 
         <!-- Primeiro item que ocupa 2 linhas na segunda coluna -->
         <div class="col-span-1 row-span-1 bg-blue-200 rounded-2xl p-4 w-full text-black hover:bg-blue-300 ease-out duration-300">
@@ -49,7 +49,7 @@
         </div>
 
         <!-- Segundo item que ocupa 2 linhas na segunda coluna -->
-        <div class="col-span-1 row-span-1 bg-yellow-200 rounded-2xl p-4 w-full text-black hover:bg-yellow-300 ease-out duration-300 h-fit">
+        <div class="col-span-1 row-span-1 bg-green-200 rounded-2xl p-4 w-full text-black hover:bg-green-300 ease-out duration-300 h-fit">
 
             <h3 class="text-2xl font-black my-1 mt-3">
                 Atividade Física

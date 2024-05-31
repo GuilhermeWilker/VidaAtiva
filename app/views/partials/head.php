@@ -16,3 +16,4 @@
 </head>
 
 <body class="p-10 bg-zinc-900 text-white">
+    <main class="h-[85vh]">

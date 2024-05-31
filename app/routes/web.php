@@ -11,5 +11,6 @@ $router = new Router;
 //});
 
 $router->add("/", 'GET', 'HomeController:index');
+$router->add("/medicamentos", 'GET', 'MedicamentoController:index');
 
 return $router;
