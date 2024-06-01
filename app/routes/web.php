@@ -12,5 +12,8 @@ $router = new Router;
 
 $router->add("/", 'GET', 'HomeController:index');
 $router->add("/medicamentos", 'GET', 'MedicamentoController:index');
+$router->add("/create/medicamento", 'GET', 'MedicamentoController:create');
+
+$router->add("/medicamento", 'POST', 'MedicamentoController:store');
 
 return $router;

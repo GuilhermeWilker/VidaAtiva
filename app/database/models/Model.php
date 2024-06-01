@@ -50,7 +50,8 @@ abstract class Model
         $stmt = $this->connection->prepare($sql);
 
         foreach ($data as $key => $value) {
-            $stmt->bindValue(':', $key, $value);
+            $paramType = is_int($value) ? PDO::PARAM_INT : PDO::PARAM_STR;
+            $stmt->bindValue(':' . $key, $value, $paramType);
         }
 
         return $stmt->execute();

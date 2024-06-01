@@ -9,7 +9,7 @@
     </header>
 
     <!-- Adicionar medicamento -->
-    <div class="my-9 bg-green-200 rounded-2xl p-4 w-full text-black block hover:bg-green-300 ease-out duration-300">
+    <a href="/create/medicamento" class="my-9 bg-green-200 rounded-2xl p-4 w-full text-black block hover:bg-green-300 ease-out duration-300 block">
         <span class="block p-1 px-4 w-fit rounded-full text-sm bg-zinc-900 text-white">
             Adicionar Medicamento
         </span>
@@ -29,7 +29,7 @@
             <img src="/assets/img/camera.png" class="h-28 mt-auto" alt="">
 
         </div>
-    </div>
+    </a>
 
     <!-- Lista de medicamentos -->
     <div class="my-9 bg-blue-200 rounded-2xl p-4 w-full text-black block hover:bg-blue-300 ease-out duration-300">
