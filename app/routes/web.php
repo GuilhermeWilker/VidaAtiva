@@ -11,8 +11,10 @@ $router = new Router;
 //});
 
 $router->add("/", 'GET', 'HomeController:index');
+
 $router->add("/medicamentos", 'GET', 'MedicamentoController:index');
 $router->add("/create/medicamento", 'GET', 'MedicamentoController:create');
+$router->add('/show/medicamentos', 'GET', 'MedicamentoController:show');
 
 $router->add("/medicamento", 'POST', 'MedicamentoController:store');
 

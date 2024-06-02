@@ -32,7 +32,7 @@
     </a>
 
     <!-- Lista de medicamentos -->
-    <div class="my-9 bg-blue-200 rounded-2xl p-4 w-full text-black block hover:bg-blue-300 ease-out duration-300">
+    <a href="/show/medicamentos" class="block my-9 bg-blue-200 rounded-2xl p-4 w-full text-black block hover:bg-blue-300 ease-out duration-300">
 
         <div class="flex justify-between">
 
@@ -45,7 +45,7 @@
             <img src="/assets/img/pilulas.png" class="w-24 mt-auto" alt="">
 
         </div>
-    </div>
+    </a>
 
 </main>
 
