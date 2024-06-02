@@ -16,6 +16,13 @@ class MedicamentoController
 
     public function index(): void
     {
+        $this->view->render('medicamentos', [
+            'title' => 'Medicamentos'
+        ]);
+    }
+
+    public function show(): void
+    {
         $medicamento = new Medicamento();
         $medicamentos = $medicamento->all();
 
